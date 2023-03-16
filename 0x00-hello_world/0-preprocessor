@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc $CFILE -o c.out && ./c.out > c
+cpp -P $CFILE -o c
