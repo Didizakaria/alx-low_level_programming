@@ -1,37 +1,20 @@
 #include <stdio.h>
+
 /**
  * main - Enter point
  *
- * Return: Always 0 (Success)
+ * Return: 0 (Success)
  */
 
 int main(void)
 {
-	int i, e;
+	char c;
 
-	i = 48;
-	e = 48;
-
-	while (e < 58)
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		i = 48;
-		while (i < 58)
-		{
-			if (e != i && e < i)
-			{
-				putchar(e);
-				putchar(i);
-				if (i == 57 && e == 56)
-				{
-					break;
-				}
-				putchar(',');
-				putchar(' ');
-			}
-			i++;
-		}
-		e++;
+		putchar(c);
 	}
 	putchar('\n');
+
 	return (0);
 }
