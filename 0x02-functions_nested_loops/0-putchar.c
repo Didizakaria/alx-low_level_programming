@@ -1,9 +1,8 @@
 #include "main.h"
-
 /**
- * main - Entry point
+ * main - Enter point
  *
- * Return: Always 0 (Success)
+ * Return: 0 Always (Success)
  */
 int main(void)
 {
@@ -16,6 +15,5 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
-
 	return (0);
 }
