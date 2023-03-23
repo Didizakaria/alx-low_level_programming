@@ -3,7 +3,7 @@
 /**
  * print_line - this fuction print a line
  *
- * @n:is a number
+ * @n: times straight line is printed.
  *
  * return: no return
  */
@@ -13,7 +13,7 @@ void print_line(int n)
 
 	for (i = 0; i < n; i++)
 	{
-		_putchar(98);
+		_putchar(95);
 	}
 	_putchar('\n');
 }
