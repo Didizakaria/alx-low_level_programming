@@ -3,9 +3,9 @@
 /**
  * _isdigit - checks for a digit from 0 to 9.
  *
- * @c: parameter
+ * @c: input number
  *
- * Return: 1 if the parameter is a digit, 0 if otherwise
+ * Return: 1 if is a number (0 to 9), 0 if otherwise
  */
 int _isdigit(int c)
 {
