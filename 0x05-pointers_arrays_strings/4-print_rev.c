@@ -5,7 +5,7 @@
  *
  * @s: parameter
  *
- * Return: string
+ * Return: no return
  */
 
 void print_rev(char *s)
