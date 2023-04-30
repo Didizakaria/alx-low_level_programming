@@ -1,3 +1,5 @@
+#include "lists.h"
+
 /**
  * free_listint2 - frees a listint_t linked list
  * @head: pointer to head of list
