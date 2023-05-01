@@ -9,35 +9,35 @@
  */
 listint_t *find_listint_loop(listint_t *head)
 {
-    listint_t *tortoise, *hare;
+	listint_t *tortoise, *hare;
 
-    if (!head || !head->next)
-        return (NULL);
+	if (!head || !head->next)
+		return (NULL);
 
-    tortoise = head->next;
-    hare = head->next->next;
+	tortoise = head->next;
+	hare = head->next->next;
 
-    while (hare)
-    {
-        if (hare == tortoise)
-        {
-            tortoise = head;
+	while (hare)
+	{
+		if (hare == tortoise)
+		{
+			tortoise = head;
 
-            while (tortoise != hare)
-            {
-                tortoise = tortoise->next;
-                hare = hare->next;
-            }
+			while (tortoise != hare)
+			{
+				tortoise = tortoise->next;
+				hare = hare->next;
+			}
 
-            return (tortoise);
-        }
+			return (tortoise);
+		}
 
-        tortoise = tortoise->next;
-        hare = hare->next;
+		tortoise = tortoise->next;
+		hare = hare->next;
 
-        if (hare)
-            hare = hare->next;
-    }
+		if (hare)
+			hare = hare->next;
+	}
 
-    return (NULL);
+	return (NULL);
 }
